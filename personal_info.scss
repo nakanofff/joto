@@ -1,0 +1,75 @@
+@charset 'utf-8';
+$joto_main: #022136;
+
+main{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+
+
+    .title_text{
+        width: 84vw;
+        height: auto;
+        margin-left: 8vw;
+        margin-right: 8vw;
+        
+
+        h1{
+            color: $joto_main;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 3vw;
+            border-bottom: 0.5px solid $joto_main;
+        }
+    }
+    .main_text_content{
+        width: 84vw;
+        height: auto;
+        margin-left: 8vw;
+        margin-right: 8vw;
+
+        p{
+            color: $joto_main;
+            font-size: 1.2vw;
+        }
+    }
+    .sub_text_content{
+        width: 84vw;
+        height: auto;
+        margin-left: 8vw;
+        margin-right: 8vw;
+        
+        p{
+            color: $joto_main;
+            font-size: 1.4vw;
+            text-align: right;
+        }
+    }
+}
+@media screen and (max-width: 420px){
+    main{
+        margin-top: 6vh;
+        margin-bottom: 6vh;
+
+        .title_text{
+        
+            h1{
+                font-size: 7vw;
+            }
+        }
+        .main_text_content{
+
+            p{
+                font-size: 3.2vw;
+            }
+        }
+        .sub_text_content{
+
+            p{
+                font-size: 3.4vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,353 @@
+@charset "utf-8";
+$joto_main: #022136;
+$contact: #EA5455;
+
+html{
+    background-color: $joto_main;
+}
+header{
+        width: 100vw;
+        height: 16vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+
+        #header_wrap_top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 84%;
+
+            .header_menu{
+                width: 80%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                border-bottom: 0.4px solid $joto_main;
+
+                a{
+
+                    img{
+                        width: 12vw;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+                .header_nav{
+
+                    ul{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        width: 56vw;
+                        height: auto;
+
+                        li{
+                            list-style: none;
+                            
+
+                            a{
+                                text-decoration: none;
+                                color: $joto_main;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                overflow: hidden;
+
+                                .nav_en{
+                                    color: $joto_main;
+                                    font-size: 2.4vw;
+                                    font-family: 'Open Sans', sans-serif;
+                                    margin-bottom: 0;
+
+                                }
+                                .nav_jp{
+                                    color: $joto_main;
+                                    margin-top: 2px;
+                                    font-size: 1vw;
+                                }
+                                
+                            }
+                            a:hover .nav_jp::before{
+                                content: "";
+                                width: 50px;
+                                height: 4px;
+                                background-color: $joto_main;
+                            }
+                        }
+                    }
+                }
+            }
+            .contact_button{
+                width: 20%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                background-color: $contact;
+                border-left: 0.5px solid $joto_main;
+                border-bottom: 0.5px solid $joto_main;
+                text-decoration: none;
+
+                p{
+                    color: #ffffff;
+                    font-size: 1.4vw;
+                    margin-right: 2vw;
+                    
+                }
+                .contact_line{
+                    width: 32%;
+                    height: 0.5px;
+                    background-color: #ffffff;
+                }
+            }
+        }
+        #header_wrap_bottom{
+            display: flex;
+            width: 100vw;
+            height: 16%;
+
+            .tel_wrap{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 80vw;
+                height: 100%;
+
+                .tel_line{
+                    width: 8%;
+                    height: 0.5px;
+                    background-color: $joto_main;
+
+                }
+                a{
+                    text-decoration: none;
+                    color: $joto_main;
+                    font-size: 0.9vw;
+                }
+            }
+            .recruit_wrap{
+                width: 20vw;
+                height: 100%;
+                background-color: $joto_main;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a{
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-size: 1vw;
+                }
+                .recruit_line{
+                    width: 32%;
+                    
+                }
+            }
+        }
+        #sm_header{
+            display: none;
+        }
+        #sm_menu{
+            display: none;
+        }
+}
+@media screen and (max-width: 420px){
+    header{
+        background-color: transparent;
+
+        #header_wrap_top{
+            display: none !important;
+        }
+        #header_wrap_bottom{
+            display: none !important;
+        }
+        #sm_header{
+            position: absolute;
+            z-index: 50;
+            top: 0;
+            width: 100vw;
+            height: 12vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .sm_logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 40vw;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+            .open_button{
+                width: 56px;
+                height: 56px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                margin-right: 2vw;
+
+                .open_line{
+                    width: 100%;
+                    height: 4%;
+                    background-color: $joto_main;
+                }
+            }
+
+        }
+        #sm_menu{
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            background-color: $joto_main;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform: translateX(100%);
+            transition: 1s ease-in-out;
+
+            .close_button_wrap{
+                position: absolute;
+                z-index: 200;
+                top: 3%;
+                right: 3%;
+                width: 56px;
+                height: 56px;
+
+                 .close_button{
+                    position: relative;
+                    z-index: 200;
+                    width: 100%;
+                    height: 100%;
+
+                    .close_line_1{
+                        position: absolute;
+                        z-index: 200;
+                        top: 50%;
+                        left: 0%;
+                        transform: translate(-50%,-50%);
+                        transform: rotate(-45deg);
+                        width: 100%;
+                        height: 3%;
+                        background-color: #ffffff;
+                    }
+                    .close_line_2{
+                        position: absolute;
+                        z-index: 200;
+                        top: 50%;
+                        left: 0%;
+                        transform: translate(-50%,-50%);
+                        transform: rotate(45deg);
+                        width: 100%;
+                        height: 3%;
+                        border-radius: 50%;
+                        background-color: #ffffff;
+                    }
+                 }
+            }
+            .sm_nav{
+                width: 85vw;
+                height: auto;
+
+                ul{
+                    padding: 0;
+
+                    li{
+                        list-style: none;
+                        border-bottom: 0.5px solid #ffffff;
+
+                        .phone_namber{
+                            color: #ffffff;
+                            font-size: 6vw;
+                            text-decoration: none;
+                            padding-left: 2vw;
+                        }
+                        a{
+                            text-decoration: none;
+                            
+
+                            .sm_nav_en{
+                                color: #ffffff;
+                                font-size: 6.4vw;
+                                margin: 0;
+                                padding-left: 2vw;
+
+                            }
+                            .sm_nav_jp{
+                                color: #ffffff;
+                                font-size: 3.2vw;
+                                margin: 0.4vh 0;
+                                padding-left: 2vw;
+                            }
+                        }
+                    }
+                }
+            }
+            .link_button{
+                width: 85vw;
+                height: auto;
+                margin-top: 8vh;
+                
+                .sm_recruit_button{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 8vh;
+                    border: 0.7px solid #ffffff;
+                    background-color: transparent;
+                    border-radius: none;
+                    margin-bottom: 2vh;
+
+                    a{  
+                        text-decoration: none;
+                        color: #ffffff;
+                        font-size: 5.6vw;
+                        padding-left: 6vw;
+                    }
+                }
+                .sm_contact_button{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 8vh;
+                    border-radius: none;
+                    border: 0.7px solid $contact;
+                    background-color: $contact;
+
+                    a{
+                        text-decoration: none;
+                        color: #ffffff;
+                        font-size: 5.4vw;
+                        padding-left: 6vw;
+                    }
+                }
+            }
+            .sm_personal_link{
+                width: 85vw;
+                height: auto;
+                border-bottom: 0.5px solid #ffffff;
+                margin-top: 4vh;
+
+                a{
+                    color: #ffffff;
+                    font-size: 2.8vw;
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+}
