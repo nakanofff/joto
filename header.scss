@@ -32,7 +32,11 @@ header{
                         width: 12vw;
                         height: auto;
                         object-fit: cover;
+                        transition: 0.3s;
                     }
+                }
+                a:hover img{
+                    opacity: 0.6;
                 }
                 .header_nav{
 
@@ -58,23 +62,25 @@ header{
 
                                 .nav_en{
                                     color: $joto_main;
-                                    font-size: 2.4vw;
+                                    font-size: 2.2vw;
                                     font-family: 'Open Sans', sans-serif;
                                     margin-bottom: 0;
+                                    transition: 0.3s;
 
                                 }
                                 .nav_jp{
                                     color: $joto_main;
                                     margin-top: 2px;
-                                    font-size: 1vw;
+                                    font-size: 0.8vw;
+                                    transition: 0.3s;
                                 }
                                 
                             }
-                            a:hover .nav_jp::before{
-                                content: "";
-                                width: 50px;
-                                height: 4px;
-                                background-color: $joto_main;
+                            a:hover .nav_en{
+                               opacity: 0.6; 
+                            }
+                            a:hover .nav_jp{
+                                opacity: 0.6;
                             }
                         }
                     }
@@ -95,6 +101,7 @@ header{
                     color: #ffffff;
                     font-size: 1.4vw;
                     margin-right: 2vw;
+                    transition: 0.3s;
                     
                 }
                 .contact_line{
@@ -103,11 +110,15 @@ header{
                     background-color: #ffffff;
                 }
             }
+            .contact_button:hover p{
+                transform: translateX(1vw);
+            }
         }
         #header_wrap_bottom{
             display: flex;
             width: 100vw;
             height: 16%;
+            border-bottom: 0.5px solid $joto_main;
 
             .tel_wrap{
                 display: flex;
@@ -126,6 +137,11 @@ header{
                     text-decoration: none;
                     color: $joto_main;
                     font-size: 0.9vw;
+                    transition: 0.3s;
+                    margin-left: 2.6vw;
+                }
+                a:hover{
+                    transform: translateX(1vw);
                 }
             }
             .recruit_wrap{
@@ -134,16 +150,24 @@ header{
                 background-color: $joto_main;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-end;
+                border-top: 0.5px solid $joto_main;
+                border-left: 0.5px solid $joto_main;
 
                 a{
                     text-decoration: none;
                     color: #ffffff;
-                    font-size: 1vw;
+                    font-size: 0.8vw;
+                    margin-right: 2.6vw;
+                    transition: 0.3s;
+                }
+                a:hover{
+                    transform: translateX(1vw);
                 }
                 .recruit_line{
                     width: 32%;
-                    
+                    height: 0.5px;
+                    background-color: #ffffff;
                 }
             }
         }

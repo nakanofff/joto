@@ -7,6 +7,11 @@ $contact: #EA5455;
         transform: translateY(0);
     }
 }
+@keyframes slideUp {
+    100%{
+        transform: translateY(-100%);
+    }
+}
 #first_animetion{
     width: 100vw;
     height: 100vh;
@@ -17,6 +22,9 @@ $contact: #EA5455;
     bottom: 0;
     left: 0;
     right: 0;
+    overflow: hidden;
+    animation: slideUp 0.8s forwards ease-in-out;
+    animation-delay: 1.3s;
 
 
     .first_text_wrap{

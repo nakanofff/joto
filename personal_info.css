@@ -22,7 +22,7 @@ main .title_text {
 main .title_text h1 {
   color: #022136;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 3vw;
+  font-size: 2.8vw;
   border-bottom: 0.5px solid #022136;
 }
 
@@ -35,7 +35,7 @@ main .main_text_content {
 
 main .main_text_content p {
   color: #022136;
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 
 main .sub_text_content {
@@ -47,7 +47,7 @@ main .sub_text_content {
 
 main .sub_text_content p {
   color: #022136;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   text-align: right;
 }
 

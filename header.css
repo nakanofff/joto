@@ -46,6 +46,12 @@ header #header_wrap_top .header_menu a img {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header #header_wrap_top .header_menu a:hover img {
+  opacity: 0.6;
 }
 
 header #header_wrap_top .header_menu .header_nav ul {
@@ -86,22 +92,27 @@ header #header_wrap_top .header_menu .header_nav ul li a {
 
 header #header_wrap_top .header_menu .header_nav ul li a .nav_en {
   color: #022136;
-  font-size: 2.4vw;
+  font-size: 2.2vw;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header #header_wrap_top .header_menu .header_nav ul li a .nav_jp {
   color: #022136;
   margin-top: 2px;
-  font-size: 1vw;
+  font-size: 0.8vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-header #header_wrap_top .header_menu .header_nav ul li a:hover .nav_jp::before {
-  content: "";
-  width: 50px;
-  height: 4px;
-  background-color: #022136;
+header #header_wrap_top .header_menu .header_nav ul li a:hover .nav_en {
+  opacity: 0.6;
+}
+
+header #header_wrap_top .header_menu .header_nav ul li a:hover .nav_jp {
+  opacity: 0.6;
 }
 
 header #header_wrap_top .contact_button {
@@ -126,6 +137,8 @@ header #header_wrap_top .contact_button p {
   color: #ffffff;
   font-size: 1.4vw;
   margin-right: 2vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header #header_wrap_top .contact_button .contact_line {
@@ -134,12 +147,18 @@ header #header_wrap_top .contact_button .contact_line {
   background-color: #ffffff;
 }
 
+header #header_wrap_top .contact_button:hover p {
+  -webkit-transform: translateX(1vw);
+          transform: translateX(1vw);
+}
+
 header #header_wrap_bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
   height: 16%;
+  border-bottom: 0.5px solid #022136;
 }
 
 header #header_wrap_bottom .tel_wrap {
@@ -166,6 +185,14 @@ header #header_wrap_bottom .tel_wrap a {
   text-decoration: none;
   color: #022136;
   font-size: 0.9vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-left: 2.6vw;
+}
+
+header #header_wrap_bottom .tel_wrap a:hover {
+  -webkit-transform: translateX(1vw);
+          transform: translateX(1vw);
 }
 
 header #header_wrap_bottom .recruit_wrap {
@@ -178,19 +205,31 @@ header #header_wrap_bottom .recruit_wrap {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-top: 0.5px solid #022136;
+  border-left: 0.5px solid #022136;
 }
 
 header #header_wrap_bottom .recruit_wrap a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 1vw;
+  font-size: 0.8vw;
+  margin-right: 2.6vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header #header_wrap_bottom .recruit_wrap a:hover {
+  -webkit-transform: translateX(1vw);
+          transform: translateX(1vw);
 }
 
 header #header_wrap_bottom .recruit_wrap .recruit_line {
   width: 32%;
+  height: 0.5px;
+  background-color: #ffffff;
 }
 
 header #sm_header {

@@ -12,6 +12,20 @@
   }
 }
 
+@-webkit-keyframes slideUp {
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes slideUp {
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
 #first_animetion {
   width: 100vw;
   height: 100vh;
@@ -22,6 +36,11 @@
   bottom: 0;
   left: 0;
   right: 0;
+  overflow: hidden;
+  -webkit-animation: slideUp 0.8s forwards ease-in-out;
+          animation: slideUp 0.8s forwards ease-in-out;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
 }
 
 #first_animetion .first_text_wrap {

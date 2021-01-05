@@ -1,0 +1,31 @@
+@-webkit-keyframes slideUp_other {
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes slideUp_other {
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+#other_first_animetion {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  opacity: 0.7;
+  position: fixed;
+  z-index: 800;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-animation: slideUp_other forwards 0.5s;
+          animation: slideUp_other forwards 0.5s;
+}
+/*# sourceMappingURL=other_firstanime.css.map */
