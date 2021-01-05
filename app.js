@@ -1,8 +1,20 @@
 $(function(){
     $('.open_button').click(function(){
         $('#sm_menu').css('transform','translateX(0)');
-    })
+    });
     $('.close_button').click(function(){
         $('#sm_menu').css('transform','translateX(100%)');
-    })
+    });
+    $('.change_en').click(function(){
+        $(this).css('transform','translateX(100%)');
+        $('.change_ja').css('transform','translateX(0)');
+        $('.about_text_ja').css('transform','translateX(100%)');
+        $('.about_text_en').css('transform','translateX(0)');
+    });
+    $('.change_ja').click(function(){
+        $(this).css('transform','translateX(100%)');
+        $('.change_en').css('transform','translateX(0)');
+        $('.about_text_en').css('transform','translateX(100%)');
+        $('.about_text_ja').css('transform','translateX(0)');
+    });
 });

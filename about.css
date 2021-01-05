@@ -1,0 +1,183 @@
+main {
+  overflow: hidden;
+}
+
+main #about_outer {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  position: relative;
+}
+
+main #about_outer .about_wrap {
+  width: 88vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #about_outer .about_wrap .about_img {
+  width: 48%;
+  height: 76vh;
+}
+
+main #about_outer .about_wrap .about_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main #about_outer .about_wrap .about_content {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+
+main #about_outer .about_wrap .about_content .about_title h1 {
+  font-size: 3.2vw;
+  color: #022136;
+  margin-bottom: 0;
+}
+
+main #about_outer .about_wrap .about_content .about_title h2 {
+  font-size: 2.2vw;
+  color: #022136;
+  margin-top: 0.6vw;
+  margin-bottom: 0;
+}
+
+main #about_outer .about_wrap .about_content .about_text {
+  position: relative;
+}
+
+main #about_outer .about_wrap .about_content .about_text .about_text_ja {
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+main #about_outer .about_wrap .about_content .about_text .about_text_ja p {
+  color: #022136;
+}
+
+main #about_outer .about_wrap .about_content .about_text .about_text_ja .about_text_main {
+  font-size: 1.2vw;
+}
+
+main #about_outer .about_wrap .about_content .about_text .about_text_ja .about_text_sub {
+  font-size: 1vw;
+}
+
+main #about_outer .about_wrap .about_content .about_text .about_text_en {
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+main #about_outer .about_wrap .about_content .about_text .about_text_en p {
+  color: #022136;
+}
+
+main #about_outer .about_wrap .about_content .about_text .about_text_en .about_text_main_en {
+  font-size: 1vw;
+}
+
+main #about_outer .about_wrap .about_content .about_text .about_text_en .about_text_sub_en {
+  font-size: 0.8vw;
+}
+
+main #about_outer .lang_change_button .change_en {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 5vw;
+  border-bottom: 0.5px solid #022136;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main #about_outer .lang_change_button .change_en:hover {
+  -webkit-transform: translateX(2vw);
+          transform: translateX(2vw);
+}
+
+main #about_outer .lang_change_button .change_ja {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 5vw;
+  border-bottom: 0.5px solid #022136;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+main #about_outer .lang_change_button .change_ja:hover {
+  -webkit-transform: translateX(2vw);
+          transform: translateX(2vw);
+}
+
+main #info_outer {
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #info_outer .conpany_info_wrap {
+  width: 73vw;
+  height: auto;
+}
+
+main #info_outer .conpany_info_wrap .conpany_info {
+  border: 0.5px solid #022136;
+}
+
+main #info_outer .conpany_info_wrap .conpany_info .conpany_info_title {
+  background-color: #022136;
+  padding: 0;
+}
+
+main #info_outer .conpany_info_wrap .conpany_info .conpany_info_content {
+  border: 0.5px solid #022136;
+}
+
+main #map_outer {
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+}
+
+main #map_outer iframe {
+  width: 100vw !important;
+  height: 48vh !important;
+}
+/*# sourceMappingURL=about.css.map */
