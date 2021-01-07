@@ -129,6 +129,7 @@ main{
         .conpany_info_wrap{
             width: 73vw;
             height: auto;
+            border-collapse:collapse;
 
             .conpany_info{
                 border: 0.5px solid $joto_main;
@@ -136,16 +137,34 @@ main{
                 .conpany_info_title{
                     background-color: $joto_main;
                     padding: 0;
+                    border-bottom: 0.5px solid #ffffff;
+                    padding-top: 0.1vh !important;
+                    padding-bottom: 0.1vh !important;
+
+                    p{
+                        color: #ffffff;
+                        font-size: 1.2vw;
+                        padding-left: 2.4vw;
+                        margin: 0;
+                    }
                 }
                 .conpany_info_content{
                     border: 0.5px solid $joto_main;
+
+                    p{
+                        color: $joto_main;
+                        font-size: 0.8vw;
+                        padding-left: 2vw;
+                        margin-top: 0.8vh;
+                        margin-bottom: 0.8vh;
+                    }
                 }
             }
         }
     }
     #map_outer{
         margin-top: 8vh;
-        margin-bottom: 8vh;
+        margin-bottom: 16vh;
 
         iframe{
             width: 100vw !important;
