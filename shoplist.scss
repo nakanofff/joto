@@ -24,6 +24,40 @@ main{
                 font-size: 1.6vw;
             }
         }
+        .shoplist_wrap{
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-top: 4vh;
+            
+            .shoplist_content{
+
+                h5{
+                    width: 80%;
+                    height: auto;
+                    color: $joto_main;
+                    font-size: 1.8vw;
+                    display: block;
+                    margin: auto;
+                    text-align: center;
+                }
+                h5::before,h5::after{
+                    content: "";
+                    width: 3vw;
+                    height: 0.5px;
+                    background-color: $joto_main;
+                }
+                .shop_info{
+                    list-style: none;
+                    
+                }
+
+            }
+            .shoplist_content_right{
+                margin-left: 10vw;
+            }
+        }
+        
     }
 }
 #area_menu{
