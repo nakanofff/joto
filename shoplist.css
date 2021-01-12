@@ -1,6 +1,38 @@
 main {
   width: 100vw;
-  height: 1000vh;
+  height: auto;
+  margin-top: 12vh;
+  margin-bottom: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .shoplist_outer {
+  width: 80vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .shoplist_outer .japan_area h4 {
+  color: #022136;
+  font-size: 1.6vw;
 }
 
 #area_menu .area_menu_open {
@@ -27,6 +59,7 @@ main {
 }
 
 #area_menu .area_menu_wrap {
+  overflow: hidden;
   position: fixed;
   z-index: 400;
   width: 18vw;
@@ -37,6 +70,10 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 #area_menu .area_menu_wrap .area_menu_content {
@@ -57,5 +94,33 @@ main {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f8f8f8;
+  border: 0.25px solid #022136;
+}
+
+#area_menu .area_menu_wrap .area_menu_content .area a {
+  text-decoration: none;
+  color: #022136;
+}
+
+#area_menu .area_menu_wrap .area_menu_close {
+  width: 2.5vw;
+  height: 100%;
+  background-color: rgba(2, 33, 54, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#area_menu .area_menu_wrap .area_menu_close p {
+  color: #ffffff;
+  font-size: 1.2vw;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 /*# sourceMappingURL=shoplist.css.map */

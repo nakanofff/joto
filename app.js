@@ -17,4 +17,10 @@ $(function(){
         $('.about_text_en').css('transform','translateX(100%)');
         $('.about_text_ja').css('transform','translateX(0)');
     });
+    $('.area_menu_open').click(function(){
+        $('.area_menu_wrap').css('transform','translateX(0)')
+    });
+    $('.area_menu_close').click(function(){
+        $('.area_menu_wrap').css('transform','translateX(-100%)')
+    });
 });
