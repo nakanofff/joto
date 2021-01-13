@@ -1,0 +1,47 @@
+@charset "utf-8";
+$joto_main: #022136;
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .products_title{
+        width: 84vw;
+        height: auto;
+        border-bottom: 0.5px solid $joto_main;
+        margin-top: 8vh;
+
+        
+        h3{
+            color: $joto_main;
+            font-size: 3.4vw;
+            margin-bottom: 0;
+        }
+        h4{
+            color: $joto_main;
+            font-size: 1.5vw;
+            margin-top: 1vh;
+            margin-bottom: 0;
+        }
+
+    }
+    .products_outer{
+        width: 75vw;
+        height: auto;
+
+        .products_wrap{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .vowel{
+
+                p{
+                    color: $joto_main;
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+}

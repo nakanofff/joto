@@ -49,6 +49,10 @@ main #about_outer .about_wrap .about_content {
   overflow: hidden;
 }
 
+main #about_outer .about_wrap .about_content .about_title {
+  border-bottom: 0.5px solid #022136;
+}
+
 main #about_outer .about_wrap .about_content .about_title h1 {
   font-size: 3.2vw;
   color: #022136;
@@ -58,7 +62,7 @@ main #about_outer .about_wrap .about_content .about_title h1 {
 main #about_outer .about_wrap .about_content .about_title h2 {
   font-size: 2.2vw;
   color: #022136;
-  margin-top: 0.6vw;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -114,6 +118,8 @@ main #about_outer .lang_change_button .change_en {
   position: absolute;
   bottom: 0;
   right: 0;
+  color: #022136;
+  font-size: 1.3vw;
   padding-right: 5vw;
   border-bottom: 0.5px solid #022136;
   -webkit-transition: 0.3s;
@@ -129,6 +135,8 @@ main #about_outer .lang_change_button .change_ja {
   position: absolute;
   bottom: 0;
   right: 0;
+  color: #022136;
+  font-size: 1.2vw;
   padding-right: 5vw;
   border-bottom: 0.5px solid #022136;
   -webkit-transition: 0.3s;
@@ -198,5 +206,55 @@ main #map_outer {
 main #map_outer iframe {
   width: 100vw !important;
   height: 48vh !important;
+}
+
+@media screen and (max-width: 420px) {
+  main #about_outer {
+    height: 160vh;
+  }
+  main #about_outer .about_wrap {
+    display: block;
+  }
+  main #about_outer .about_wrap .about_img {
+    width: 100%;
+  }
+  main #about_outer .about_wrap .about_content {
+    width: 100%;
+    height: 80vh;
+    margin-top: 4vh;
+  }
+  main #about_outer .about_wrap .about_content .about_title h1 {
+    font-size: 8.2vw;
+  }
+  main #about_outer .about_wrap .about_content .about_title h2 {
+    font-size: 6.3vw;
+  }
+  main #about_outer .about_wrap .about_content .about_text .about_text_ja .about_text_main {
+    font-size: 4.2vw;
+  }
+  main #about_outer .about_wrap .about_content .about_text .about_text_ja .about_text_sub {
+    font-size: 3.6vw;
+  }
+  main #about_outer .about_wrap .about_content .about_text .about_text_en .about_text_main_en {
+    font-size: 3.7vw;
+  }
+  main #about_outer .about_wrap .about_content .about_text .about_text_en .about_text_sub_en {
+    font-size: 3vw;
+  }
+  main #about_outer .lang_change_button .change_en {
+    font-size: 4vw;
+  }
+  main #about_outer .lang_change_button .change_ja {
+    font-size: 4.3vw;
+  }
+  main #info_outer .conpany_info_wrap {
+    width: 90vw;
+  }
+  main #info_outer .conpany_info_wrap .conpany_info .conpany_info_title p {
+    font-size: 3.4vw;
+  }
+  main #info_outer .conpany_info_wrap .conpany_info .conpany_info_content p {
+    font-size: 3vw;
+  }
 }
 /*# sourceMappingURL=about.css.map */
