@@ -11,9 +11,24 @@
 <link rel="stylesheet" href="footer.css">
 <link rel="stylesheet" href="about.css">
 <link rel="stylesheet" href="other_firstanime.css">
+<link rel="stylesheet" href="animate.css">
 <link rel="shortcut icon" href="joto_icon.png">
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="wow.min.js"></script>
 <script src="app.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script>
+    (function(d) {
+      var config = {
+        kitId: 'byl3eqb',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
 </head>
 
 <body>
@@ -135,10 +150,10 @@
 <main>
     <div id="about_outer">
         <div class="about_wrap">
-            <div class="about_img">
+            <div class="about_img wow fadeInLeft">
                 <img src="about_img.jpeg" alt="城東輪業社イメージ">
             </div>
-            <div class="about_content">
+            <div class="about_content wow fadeInRight" data-wow-delay="0.3s">
                 <div class="about_title">
                     <h1>About</h1>
                     <h2>会社概要</h2>
@@ -188,7 +203,7 @@
     </div>
 
     <div id="info_outer">
-        <table class="conpany_info_wrap">
+        <table class="conpany_info_wrap wow fadeInUp">
             <tr class="conpany_info">
                 <td class="conpany_info_title">
                     <p>社名</p>
@@ -279,7 +294,7 @@
         </table>
     </div>
 
-    <div id="map_outer">
+    <div id="map_outer" class=" wow fadeInUp">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.511523911559!2d135.54464555282337!3d34.66703727173366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000de210012b6a5%3A0xb6f141e19d9bbfd8!2z77yI5qCq77yJ5Z-O5p2x6Lyq5qWt56S-!5e0!3m2!1sja!2sjp!4v1609826826714!5m2!1sja!2sjp" 
         width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>

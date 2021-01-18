@@ -33,6 +33,142 @@ main .shoplist_outer {
 main .shoplist_outer .japan_area h4 {
   color: #022136;
   font-size: 1.6vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2vw;
+}
+
+main .shoplist_outer .japan_area h4::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #022136;
+  position: absolute;
+  left: 0;
+}
+
+main .shoplist_outer .shoplist_wrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4vh;
+}
+
+main .shoplist_outer .shoplist_wrap .shoplist_content {
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .shoplist_outer .shoplist_wrap .shoplist_content h5 {
+  width: 80%;
+  height: auto;
+  color: #022136;
+  font-size: 1.8vw;
+  display: block;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .shoplist_outer .shoplist_wrap .shoplist_content h5::before, main .shoplist_outer .shoplist_wrap .shoplist_content h5::after {
+  content: "";
+  width: 2vw;
+  height: 0.5px;
+  background-color: #022136;
+  position: absolute;
+}
+
+main .shoplist_outer .shoplist_wrap .shoplist_content h5::before {
+  left: 0;
+}
+
+main .shoplist_outer .shoplist_wrap .shoplist_content h5::after {
+  right: 0;
+}
+
+main .shoplist_outer .shoplist_wrap .shoplist_content .shop_info {
+  padding: 0;
+}
+
+main .shoplist_outer .shoplist_wrap .shoplist_content .shop_info li {
+  list-style: none;
+  font-size: 1em;
+  color: #022136;
+}
+
+main .shoplist_outer .shoplist_wrap .shoplist_content .shop_web {
+  width: 80%;
+  height: 20%;
+  border: 0.5px solid #022136;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+}
+
+main .shoplist_outer .shoplist_wrap .shoplist_content .shop_web p {
+  color: #022136;
+  font-size: 1em;
+  z-index: 100;
+}
+
+main .shoplist_outer .shoplist_wrap .shoplist_content .shop_web .shop_hover_shape {
+  width: 100%;
+  height: 100%;
+  background-color: #022136;
+  position: absolute;
+  z-index: 200;
+  left: -100%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+main .shoplist_outer .shoplist_wrap .shoplist_content .shop_web:hover p {
+  z-index: 300;
+  color: #ffffff;
+}
+
+main .shoplist_outer .shoplist_wrap .shoplist_content .shop_web:hover .shop_hover_shape {
+  left: 0;
+}
+
+main .shoplist_outer .shoplist_wrap .shoplist_content_right {
+  margin-left: 10vw;
 }
 
 #area_menu .area_menu_open {
@@ -42,6 +178,8 @@ main .shoplist_outer .japan_area h4 {
   left: 0;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 #area_menu .area_menu_open .area_menu_line {
@@ -56,6 +194,12 @@ main .shoplist_outer .japan_area h4 {
   color: #022136;
   font-size: 1vw;
   margin: 0.3vw 0;
+}
+
+#area_menu .area_menu_open:hover {
+  left: 2%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 #area_menu .area_menu_wrap {
@@ -122,5 +266,55 @@ main .shoplist_outer .japan_area h4 {
   font-size: 1.2vw;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+@media screen and (max-width: 420px) {
+  main {
+    margin-top: 0;
+  }
+  main .shoplist_outer {
+    width: 90vw;
+  }
+  main .shoplist_outer .japan_area h4 {
+    font-size: 1.5em;
+    padding-left: 10vw;
+  }
+  main .shoplist_outer .shoplist_wrap {
+    display: block;
+  }
+  main .shoplist_outer .shoplist_wrap .shoplist_content {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8vh;
+  }
+  main .shoplist_outer .shoplist_wrap .shoplist_content h5 {
+    font-size: 1.2em;
+  }
+  main .shoplist_outer .shoplist_wrap .shoplist_content h5::before, main .shoplist_outer .shoplist_wrap .shoplist_content h5::after {
+    width: 16vw;
+  }
+  main .shoplist_outer .shoplist_wrap .shoplist_content_right {
+    margin-left: 0;
+  }
+  #area_menu .area_menu_open {
+    left: -5%;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #area_menu .area_menu_open .area_menu_line {
+    height: 3vh;
+  }
+  #area_menu .area_menu_open p {
+    font-size: 0.8em;
+  }
+  #area_menu .area_menu_wrap {
+    width: 56vw;
+  }
+  #area_menu .area_menu_wrap .area_menu_close {
+    width: 12vw;
+  }
+  #area_menu .area_menu_wrap .area_menu_close p {
+    font-size: 1.3em;
+  }
 }
 /*# sourceMappingURL=shoplist.css.map */

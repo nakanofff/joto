@@ -22,6 +22,18 @@ main{
             h4{
                 color: $joto_main;
                 font-size: 1.6vw;
+                position: relative;
+                display: flex;
+                align-items: center;
+                padding-left: 2vw;
+            }
+            h4::before{
+                content: "";
+                width: 16px;
+                height: 16px;
+                background-color: $joto_main;
+                position: absolute;
+                left: 0;
             }
         }
         .shoplist_wrap{
@@ -31,6 +43,11 @@ main{
             margin-top: 4vh;
             
             .shoplist_content{
+                width: 50%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
                 h5{
                     width: 80%;
@@ -40,17 +57,68 @@ main{
                     display: block;
                     margin: auto;
                     text-align: center;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                 }
                 h5::before,h5::after{
                     content: "";
-                    width: 3vw;
+                    width: 2vw;
                     height: 0.5px;
                     background-color: $joto_main;
+                    position: absolute;
+                }
+                h5::before{
+                    left: 0;
+                }
+                h5::after{
+                    right: 0;
                 }
                 .shop_info{
-                    list-style: none;
+                    padding: 0;
                     
+                    li{
+                        list-style: none;
+                        font-size: 1em;
+                        color: $joto_main;
+                    }
                 }
+                .shop_web{
+                    width: 80%;
+                    height: 20%;
+                    border: 0.5px solid $joto_main;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    overflow: hidden;
+                    position: relative;
+
+                    p{
+                        color: $joto_main;
+                        font-size: 1em;
+                        z-index: 100;
+                    }
+                    .shop_hover_shape{
+                        width: 100%;
+                        height: 100%;
+                        background-color: #022136;
+                        position: absolute;
+                        z-index: 200;
+                        left: -100%;
+                        transition: 0.5s ease-in-out;
+                    }
+
+                }
+                .shop_web:hover p{
+                    z-index: 300;
+                    color: #ffffff;
+                }
+                .shop_web:hover .shop_hover_shape{
+                    left: 0;
+                }
+                
 
             }
             .shoplist_content_right{
@@ -68,6 +136,7 @@ main{
         top: 50%;
         left: 0;
         transform: rotate(90deg);
+        transition: 0.5s ease-in-out;
 
         .area_menu_line{
             width: 1px;
@@ -81,6 +150,10 @@ main{
             font-size: 1vw;
             margin: 0.3vw 0;
         }
+    }
+    .area_menu_open:hover{
+        left: 2%;
+        transform: rotate(90deg);
     }
     .area_menu_wrap{
         overflow: hidden;
@@ -128,5 +201,69 @@ main{
                 transform: rotate(90deg);
             }
         }
+    }
+}
+@media screen and (max-width: 420px){
+    main{
+        margin-top: 0;
+
+        .shoplist_outer{
+            width: 90vw;
+
+            .japan_area{
+
+                h4{
+                    font-size: 1.5em;
+                    padding-left: 10vw;
+                }
+            }
+            .shoplist_wrap{
+                display: block;
+
+                .shoplist_content{
+                    width: 100%;
+                    height:auto;
+                    margin-bottom: 8vh;
+
+                    h5{
+                        font-size: 1.2em;
+                    }
+                    h5::before,h5::after{
+                        width: 16vw;
+                    }
+                }
+                .shoplist_content_right{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    #area_menu{
+
+        .area_menu_open{
+            left: -5%;
+            transform: rotate(90deg);
+
+            .area_menu_line{
+                height: 3vh;
+            }
+            p{
+                font-size: 0.8em;
+            }
+        }
+
+        .area_menu_wrap{
+            width: 56vw;
+
+            .area_menu_close{
+                width: 12vw;
+
+                p{
+                    font-size: 1.3em;
+                }
+            }
+        }
+
+
     }
 }

@@ -57,6 +57,9 @@ main #about_outer .about_wrap .about_content .about_title h1 {
   font-size: 3.2vw;
   color: #022136;
   margin-bottom: 0;
+  font-family: halyard-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 main #about_outer .about_wrap .about_content .about_title h2 {
@@ -64,6 +67,9 @@ main #about_outer .about_wrap .about_content .about_title h2 {
   color: #022136;
   margin-top: 0;
   margin-bottom: 0;
+  font-family: a-otf-futo-go-b101-pr6n, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 main #about_outer .about_wrap .about_content .about_text {
@@ -81,6 +87,10 @@ main #about_outer .about_wrap .about_content .about_text .about_text_ja {
 
 main #about_outer .about_wrap .about_content .about_text .about_text_ja p {
   color: #022136;
+  font-size: 1em;
+  font-family: a-otf-futo-go-b101-pr6n, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 main #about_outer .about_wrap .about_content .about_text .about_text_ja .about_text_main {
@@ -104,6 +114,10 @@ main #about_outer .about_wrap .about_content .about_text .about_text_en {
 
 main #about_outer .about_wrap .about_content .about_text .about_text_en p {
   color: #022136;
+  font-size: 0.8em;
+  font-family: halyard-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 main #about_outer .about_wrap .about_content .about_text .about_text_en .about_text_main_en {
