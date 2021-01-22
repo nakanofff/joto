@@ -224,6 +224,7 @@ main #map_outer iframe {
 
 @media screen and (max-width: 420px) {
   main #about_outer {
+    margin-top: 0;
     height: 160vh;
   }
   main #about_outer .about_wrap {

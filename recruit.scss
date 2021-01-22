@@ -64,3 +64,68 @@ main{
         }
     }
 }
+@media screen and (max-width: 420px){
+    main{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4vh;
+        margin-bottom: 12vh;
+        
+        .title_text{
+            width: 84vw;
+            height: auto;
+            margin-left: 8vw;
+            margin-right: 8vw;
+            
+    
+            h1{
+                color: $joto_main;
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 1.8em;
+                border-bottom: 0.5px solid $joto_main;
+            }
+        }
+        .recruit_info_outer{
+            margin-top: 4vh;
+    
+            .recruit_info_wrap{
+                width: 84vw;
+                height: auto;
+                border-collapse:collapse;
+    
+                .recruit_info{
+                    border: 0.5px solid $joto_main;
+    
+                    .recruit_title{
+                        width: 40%;
+                        height: auto;
+                        background-color: $joto_main;
+                        border-bottom: 0.5px solid #ffffff;
+    
+                        p{
+                            color: #ffffff;
+                            font-size: 1em;
+                            margin-top: 2vh !important;
+                            margin-bottom: 2vh !important;
+                            padding-left: 2vw;
+                        }
+                    }
+                    .recruit_content{
+                        width: 60%;
+                        height: auto;
+                        background-color: #ffffff;
+    
+                        p{
+                            color: $joto_main;
+                            font-size: 0.8em;
+                            padding-left: 2vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

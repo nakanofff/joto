@@ -53,17 +53,17 @@ main .sub_text_content p {
 
 @media screen and (max-width: 420px) {
   main {
-    margin-top: 6vh;
+    margin-top: 0;
     margin-bottom: 6vh;
   }
   main .title_text h1 {
-    font-size: 7vw;
+    font-size: 2.3em;
   }
   main .main_text_content p {
-    font-size: 3.2vw;
+    font-size: 1em;
   }
   main .sub_text_content p {
-    font-size: 3.4vw;
+    font-size: 0.8em;
   }
 }
 /*# sourceMappingURL=personal_info.css.map */

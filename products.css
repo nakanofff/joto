@@ -174,4 +174,49 @@ main .products_outer .products_wrap .products_content .brand_info .brand_web_wra
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+
+@media screen and (max-width: 420px) {
+  main .products_title {
+    margin: 0;
+  }
+  main .products_title h3 {
+    font-size: 2em;
+  }
+  main .products_title h4 {
+    font-size: 1.5em;
+  }
+  main .products_outer {
+    width: 85vw;
+  }
+  main .products_outer .products_wrap .vowel p {
+    font-size: 2em;
+  }
+  main .products_outer .products_wrap .products_content {
+    display: inline;
+  }
+  main .products_outer .products_wrap .products_content .brand_img {
+    width: 100%;
+    height: 22vh;
+  }
+  main .products_outer .products_wrap .products_content .brand_img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .products_outer .products_wrap .products_content .brand_info {
+    margin: 0;
+    width: 100%;
+    margin-top: 3vh;
+  }
+  main .products_outer .products_wrap .products_content .brand_info .brand_title h5 {
+    font-size: 1.5em;
+  }
+  main .products_outer .products_wrap .products_content .brand_info .brand_content p {
+    font-size: 1.2em;
+  }
+  main .products_outer .products_wrap .products_content .brand_info .brand_web_wrap .brand_web {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=products.css.map */

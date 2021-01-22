@@ -140,5 +140,69 @@ main{
     }
 }
 @media screen and (max-width: 420px){
-    
+    main{
+
+        .products_title{
+            margin: 0;
+
+            h3{
+                font-size: 2em;
+            }
+            h4{
+                font-size: 1.5em;
+            }
+        }
+        .products_outer{
+            width: 85vw;
+            
+            .products_wrap{
+
+                .vowel{
+
+                    p{
+                        font-size: 2em;
+                    }
+
+                }
+                .products_content{
+                    display: inline;
+
+                    .brand_img{
+                        width: 100%;
+                        height: 22vh;
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .brand_info{
+                        margin: 0;
+                        width: 100%;
+                        margin-top: 3vh;
+
+                        .brand_title{
+
+                            h5{
+                                font-size: 1.5em;
+                            }
+                        }
+                        .brand_content{
+
+                            p{
+                                font-size: 1.2em;
+                            }
+                        }
+                        .brand_web_wrap{
+
+                            .brand_web{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

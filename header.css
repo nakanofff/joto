@@ -305,7 +305,7 @@ header #sm_menu {
   }
   header #sm_header .open_button .open_line {
     width: 100%;
-    height: 4%;
+    height: 2px;
     background-color: #022136;
   }
   header #sm_menu {
